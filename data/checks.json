@@ -1,0 +1,18 @@
+{
+  "n_players": 5000,
+  "n_depositors": 1968,
+  "ftd_rate": 0.3936,
+  "dep_before_reg": 0,
+  "bet_before_reg": 0,
+  "bet_before_first_dep": 0,
+  "orphans": 0,
+  "bets_no_deposit": 0,
+  "top10_stake_share": 0.6670219632479262,
+  "top10_ggr_share": 0.49967098958243833,
+  "evening_share": 0.5239024205462328,
+  "turnover_multiple": 3.4968937698039344,
+  "currency": "EUR",
+  "seed": 42,
+  "start": "2025-10-01",
+  "end": "2026-09-30"
+}
