@@ -27,19 +27,25 @@
 4. Built deposits and bets day by day, with a built-in house edge (casino returns ~95% of stakes, sportsbook ~93%).
 5. Loaded everything into SQL Server and ran checks: no impossible dates, no broken links, revenue positive.
 
-## 4. The findings (patterns planted by design, confirmed in SQL)
+## 4. The findings
 
-**Finding 1: 39.4% of registered players make a deposit**
-![Chart 1](docs/chart1.png)
-Most sign-ups never pay; paid search converts best (about 51%) and social worst (about 27%). [FTD (first-time deposit) rate = share of registrants who ever deposit.]
+**Finding 1: Paid search players deposit nearly twice as often as social players (51.1% vs 27.4%)**
 
-**Finding 2: the top 10% of bettors place 67% of stakes but only 50% of GGR**
-![Chart 2](docs/chart2.png)
-A small group carries the business, which is why VIP retention matters. [GGR (gross gaming revenue) = stakes minus payouts.]
+![FTD rate by channel](docs/chart1.png)
 
-**Finding 3: welcome-bonus players place 16.6 bets each vs 40.6 for others**
-![Chart 3](docs/chart3.png)
-Bonus takers fade quickly, so bonus cost may not pay back. This is the question for the bonus-ROI project.
+FTD (first-time deposit) rate is the share of registered players who make a deposit. Paid search converts best, then organic (42.9%) and affiliate (34.3%), while social is weakest.
+
+**Finding 2: The top 20% of players generate 73.6% of revenue**
+
+![Revenue by player decile](docs/chart2.png)
+
+GGR (gross gaming revenue) is stakes minus payouts. The top 10% of players alone bring 50% of GGR, so losing a handful of high-value players would hurt far more than losing many small ones.
+
+**Finding 3: Players who took the welcome bonus place 59% fewer bets (16.6 vs 40.6 per depositor)**
+
+![Bets per depositor by bonus](docs/chart3.png)
+
+Bonus takers deposit but disengage quickly. The bonus attracts players who leave once it is used up.
 
 ## 5. The recommendation
 
